@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class conditional {
   public static void main(String[] args) {
     int i = 10;
@@ -89,7 +91,27 @@ public class conditional {
         dayName = "Sunday";
         break;
     }
-    System.out.println(3*10%3);
+    System.out.println(dayName);
+
+    char grade2 = 'B';
+    int pocketMoney = 0;
+
+    switch (grade2) {
+      case 'A':
+      pocketMoney += 100;
+      break;
+      case 'B':
+      pocketMoney += 70;
+      break;
+      case 'C':
+      pocketMoney += 60;
+      break;
+
+      default:
+      pocketMoney += 5;
+    }
+    System.out.println("pocketmoney =" + pocketMoney);
+    
 
 
 
