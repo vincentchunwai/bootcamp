@@ -52,11 +52,9 @@ public class loops {
 
           for(int i = 0; i < 5; i++){
           System.out.println(str);
-          for(int x = 0; x<=i; x++){
+          for(int x = 0; x<=i; x+=4){
              str += '*';
-             x++;
-             x++;
-             x++;
+            
              
              
              
