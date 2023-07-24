@@ -48,7 +48,7 @@ public class JavaQuest16 {
       }
     } */
     for (int i = 1; i < n; i++) {
-      array[i] = random.nextInt(-10, 10);
+      array[i] = random.nextInt(-n, n-1);
       sum += array[i];
     }
     if (sum > 0){

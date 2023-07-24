@@ -12,6 +12,9 @@ public class random {
        System.out.println("Random number =" + randomNumber);   
 
     }
+    String str = "Hello world";
+    str = str.replace("Hel", "KKK");
+        System.out.println(str);
 
 
   }
