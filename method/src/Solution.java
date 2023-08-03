@@ -1,19 +1,18 @@
 class Solution {
-    public static String gcdOfStrings(String str1, String str2) {
-        String Ans = "";
-        char[] str1c = str1.toCharArray();
-        char[] str2c = str2.toCharArray();
+    public boolean areAlmostEqual(String s1, String s2) {
         int i = 0;
-        int acc = 0;
-        while (str1c[i] == str2c[i] && i < str1c.length && i < str2c.length){
-            i++;
-            acc++;
-        }
-        for (int y = 0; y < acc; y++){
-            Ans += str1c[y];
-        }
         
-        return Ans;
+        if (s2 == (s1))
+          return true;
+        while (i < s2.length()/2){
+            char temp = s2.charAt(i);
+            s2.charAt(i) = s2.charAt(s2.length()-1-i);
+            s2.charAt(s2.length()-1-i) = temp;
 
+            if (s2 == s1)
+                return true;
+            i++;
+        }
+        return false;
     }
-  }
+}

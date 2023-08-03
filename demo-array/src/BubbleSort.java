@@ -13,6 +13,9 @@ public static void main(String[] args){
       // target: [1, 2, 4, 5, 8]
       int[] nums = new int[] {5, 1, 4, 8, 2};
         System.out.println(Arrays.toString(nums));
+        int[] copy = Arrays.copyOfRange(nums, 0, 2);
+        System.out.println(Arrays.toString(copy));
+        
 }
         
       

@@ -22,6 +22,12 @@ public class Wrapper2{
     Long l3 = l2;
 
     System.out.println(12);
+    char s = 'c';
+    char start = 'c';
+            char end = 'l';
+            if (start != end){
+                
 
   }
+}
 }

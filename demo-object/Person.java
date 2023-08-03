@@ -1,7 +1,7 @@
 public class Person{ //template
   // Describe the person by attributes
-  int age;
-  String name;
+  private int age;
+  private String name;
   char gender;
   public static boolean isMale(char gender) {//belongs to class
     if ( gender == 'F'){
@@ -67,6 +67,10 @@ public class Person{ //template
     computer2.getColor(); // -> yellow
     computer.SetColor("Black");
     System.out.println(computer.getColor());
+
+    p.setAge(15);
+    // p.age(15); private
+    p.getAge(); //15
   }
 
   
