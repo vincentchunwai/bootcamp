@@ -16,5 +16,8 @@ public class C extends B{
     c.print(5); // 100 5
     c.print("def"); // abc def
     c.print(new int[] {-1, 0, 2}); // [-1, 0, 2]
+
+    A aa = new C();
+    C aaa = (C) aa;
   }
 }

@@ -40,6 +40,7 @@ public abstract class GameMember {
   public static void main(String[] args) {
     Dog dog = new Dog();
     Cat cat = new Cat();
+    cat.jump();
     GameMember.upOnce(dog, cat);
     System.out.println(dog.getScore()); //2
     System.out.println(cat.getScore()); //1

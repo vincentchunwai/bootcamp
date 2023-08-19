@@ -26,7 +26,7 @@ public class X extends Y{
     System.out.println(((Y) x).getName()); */
     
     Y y = new X("Tommy");
-     System.out.println(y.getName());
+     /* System.out.println(y.getName()); */
     X yy = (X)y;
     yy.getName();
      System.out.println(yy.getParentName());

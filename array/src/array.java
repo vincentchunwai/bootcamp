@@ -16,6 +16,11 @@ public class array {
     food.add("apple");
     food.add("banana");
     food.add("grape");
+    food.get(0);
+    String ss= "hello";
+    ss.toLowerCase();
+    char[]  = s.toCharArray(); 
+    char[] c = ss.toCharArray();
 
 
     

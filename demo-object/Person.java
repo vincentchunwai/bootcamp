@@ -39,8 +39,8 @@ public class Person{ //template
   // ...
   public static void main(String[] args){
     String s = "abc";
-    Person p = new Person(18, "John", 'M'); // Produce empty person object, with default value
-    Person p2 = new Person(19, "Vincent", 'F'); // Produce empty person object, with default value
+    Person1 p = new Person1(18, "John", 'M'); // Produce empty person object, with default value
+    Person1 p2 = new Person1(19, "Vincent", 'F'); // Produce empty person object, with default value
     BankAccount account = new BankAccount("465", "Vincent", 800.9);
     account.deposit(400);
     char male = 'M';
@@ -55,7 +55,7 @@ public class Person{ //template
     p.setGender('M');
     System.out.println(p.getGender());
 
-    System.out.println(Person.isMale('F'));
+    System.out.println(Person1.isMale('F'));
     System.out.println(p.isMale());
 
     Computer computer = new Computer(); // Computer() -> empty constructor

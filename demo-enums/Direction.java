@@ -26,7 +26,16 @@ public enum Direction { // special keyword since Java 1.5
     return this.degree;
   }
 
+  public boolean isOpposite(Direction direction){
+    return Math.abs(this.degree - direction.getDegree()) == 180;
+  }
+
   /* public void setDirection(char direction){  // false design
     this.direction = direction;
   } */
+
+  public static void main(String[] args) {
+    System.out.println(Direction.EAST.isOpposite(Direction.WEST));
+    System.out.println(Direction.NORTH.isOpposite(Direction.EAST));
+  }
 }

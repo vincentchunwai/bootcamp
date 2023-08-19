@@ -53,6 +53,6 @@ public class JavaQuest33 {
       }
     }
     String xx = Arrays.toString(result);
-    return xx ;
+    return xx;
   }
 }

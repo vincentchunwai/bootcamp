@@ -63,11 +63,11 @@ public class Demo {
         // 4D array
         int [][][][] arr4d = new int[1][2][3][4];
 
-        Demo1[][] demo = new Demo1[2][2];
-        demo[0][0] = new Demo1(random.nextInt(63));
-        demo[0][1] = new Demo1(random.nextInt(63));
-        demo[1][0] = new Demo1(random.nextInt(63));
-        demo[1][1] = new Demo1(random.nextInt(63));
+        Demo[][] demo = new Demo[2][2];
+        demo[0][0] = new Demo(random.nextInt(63));
+        demo[0][1] = new Demo(random.nextInt(63));
+        demo[1][0] = new Demo(random.nextInt(63));
+        demo[1][1] = new Demo(random.nextInt(63));
 
         for (int i = 0; i < demo.length; i++){
             for (int j = 0; j < demo[0].length; j++){

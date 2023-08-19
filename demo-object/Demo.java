@@ -10,7 +10,7 @@ public class Demo {
     // car2 = new Car(5, 10, "Yellow");
     car.SetColor("Yellow"); // car2 -> object reference, storing the object
     car.SetColor("Blue");
-    Person person = new Person(18, "Vincent", 'M');
+    Person1 person = new Person1(18, "Vincent", 'M');
     Computer computer = new Computer(19, 6, "black");
     String str = new String("Hello"); // str -> object reference
     System.out.println(str); // ** Hello **
