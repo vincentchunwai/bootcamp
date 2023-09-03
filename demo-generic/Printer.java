@@ -51,6 +51,6 @@ public class Printer<T/* , U, V, S */> { // 1. Class Signature, add <>, T repres
 
     Printer<Boolean> p4 = new Printer<>();
     //p4.setValue("String");
-    System.out.println(((String) p4.getObject()).charAt(0));
+    System.out.println(((String) p1.getObject()).charAt(0));
   }
 }

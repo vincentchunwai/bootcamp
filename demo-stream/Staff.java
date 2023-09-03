@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class Staff {
@@ -13,6 +14,9 @@ public class Staff {
     this.name = name;
     this.department = department;
     this.performance = performance;
+  }
+
+  public Staff(int i, int j, String string) {
   }
 
   public Staff of(String name, Department department, int performance){
@@ -38,5 +42,18 @@ public class Staff {
     Map<Boolean, List<Staff>> gradeMap = staffs.stream()
     .collect(Collectors.partitioningBy(staff -> staff.performance >= 60));
     gradeMap.entrySet().stream().forEach(System.out::println);
+
+    //BinarySearch
+    
+
   }
+
+  public int getId() {
+    return 0;
+  }
+
+  public Object getName() {
+    return null;
+  }
+  
 }

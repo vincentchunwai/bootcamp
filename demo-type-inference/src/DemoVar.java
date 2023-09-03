@@ -1,8 +1,11 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -22,7 +25,7 @@ public class DemoVar {
       System.out.println(str);
     }
     List<List<String>> temp = new ArrayList<>();
-    List<String> des1 = new List<>(Arrays.asList("a", "B", c));
+    List<String> des1 = new LinkedList<>(Arrays.asList("a", "B", c));
     temp.add(des1);
     temp.stream().collect(Collectors.toList());
 

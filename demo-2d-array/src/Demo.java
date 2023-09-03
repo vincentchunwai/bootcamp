@@ -5,7 +5,7 @@ public class Demo {
 
     int age;
 
-    public Demo(int age){
+    public Demo(int age) {
         this.age = age;
     }
 
@@ -13,8 +13,8 @@ public class Demo {
         int[] nums = new int[3];
         // int[] num; -> declaration
         // new int[3]; -> initialization
-        nums = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // re-assignment
-        int[] num2 = {1, 3, 4, 5, 0};
+        nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // re-assignment
+        int[] num2 = { 1, 3, 4, 5, 0 };
 
         int[][] matrix = new int[3][4]; // new int[row][column];
 
@@ -59,9 +59,9 @@ public class Demo {
         System.out.println(str);
 
         // 3D array
-        int [][][] arr3d = new int [1][2][3];
+        int[][][] arr3d = new int[1][2][3];
         // 4D array
-        int [][][][] arr4d = new int[1][2][3][4];
+        int[][][][] arr4d = new int[1][2][3][4];
 
         Demo[][] demo = new Demo[2][2];
         demo[0][0] = new Demo(random.nextInt(63));
@@ -69,18 +69,25 @@ public class Demo {
         demo[1][0] = new Demo(random.nextInt(63));
         demo[1][1] = new Demo(random.nextInt(63));
 
-        for (int i = 0; i < demo.length; i++){
-            for (int j = 0; j < demo[0].length; j++){
+        for (int i = 0; i < demo.length; i++) {
+            for (int j = 0; j < demo[0].length; j++) {
                 System.out.println(demo[i][j].age);
             }
         }
 
-        /* String[][] strings = new String[][] {{"abc", "def"}, {"xyz", "ijk"}};
-        for (int i = 0; i < strings.length; i++){
-            for (int j = 0; j < strings[0].length; j++){
-                System.out.println(strings[i][j]);
-            }
-        } */
+        /*
+         * String[][] strings = new String[][] {{"abc", "def"}, {"xyz", "ijk"}};
+         * for (int i = 0; i < strings.length; i++){
+         * for (int j = 0; j < strings[0].length; j++){
+         * System.out.println(strings[i][j]);
+         * }
+         * }
+         */
 
     }
+
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
 }

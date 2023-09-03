@@ -6,5 +6,5 @@ public interface Chair {
 
   void sitOn();
 
-  Chair createChair(Style style);
+  //Chair createChair(Style style);
 }

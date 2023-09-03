@@ -24,7 +24,15 @@ public class BankAccount{
     }
   }
   public void checkBalance(double amount){
-    
+
   }
-  
+  public void transfer(double amount, BankAccount otherAccount){
+    if(amount > 0 && amount < balance){
+      balance -= amount;
+      otherAccount.balance += amount;
+      System.out.println("Transfer of " + amount + "successful");
+    } else {
+      System.out.println("Insufficient funds or invalid amount. Transfer failed");
+    }
+  }
 }
