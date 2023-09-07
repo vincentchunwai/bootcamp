@@ -1,1 +1,4 @@
-com\junit\AppTest.class
+com\junit\PerClassTest.class
+com\junit\BeforeAll.class
+com\junit\AssertTest.class
+com\junit\BeforeTest.class
