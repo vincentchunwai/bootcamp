@@ -1,6 +1,6 @@
 package com.javahongkong.bootcamp.exercise;
 
-import java.math.BigDecimal;
+import java.math.BigDecimal
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Optional;
